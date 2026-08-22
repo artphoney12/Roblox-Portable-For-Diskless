@@ -13,7 +13,8 @@ Roblox Portable For Diskless adalah sebuah *launcher* dan pengelola instansi Rob
 1. Unduh file `Roblox Portable <versi>.zip` terbaru dari menu **Releases**.
 2. Ekstrak isi file `.zip` tersebut ke dalam folder Game Disk Anda (misal: `E:\Online Games\Roblox`).
 3. Jadikan `RobloxPortable.exe` sebagai *shortcut* (jalan pintas) utama untuk bermain Roblox dan pasang di Game Menu PC Client Anda.
-4. Selesai! Saat dijalankan, aplikasi akan mengurus *bypass* instalasi dan melakukan *update* secara otomatis di latar belakang.
+4. Untuk membuka game Roblox maupun melakukan *update*, Anda cukup menjalankan/membuka file `RobloxPortable.exe` tersebut.
+5. Selesai! Saat dijalankan, aplikasi akan mengurus *bypass* instalasi dan melakukan *update* secara otomatis di latar belakang.
 
 ## 🛠️ Persyaratan Sistem & Instalasi
 
