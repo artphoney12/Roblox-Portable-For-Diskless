@@ -1,6 +1,6 @@
 {
   "name": "roblox-portable-for-diskless",
-  "version": "260823.0233",
+  "version": "260823.0300",
   "description": "Launcher dan pengelola instalasi Roblox portabel yang dioptimalkan untuk Warnet Diskless dengan integrasi sistem lisensi otomatis.",
   "main": "launcher.py",
   "scripts": {
