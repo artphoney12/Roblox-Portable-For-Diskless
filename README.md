@@ -6,8 +6,6 @@ Roblox Portable For Diskless adalah sebuah *launcher* dan pengelola instansi Rob
 
 - **Bypass & Portabilitas**: Menjalankan Roblox secara portabel dari satu lokasi (Game Disk) tanpa perlu instalasi di setiap PC Klien.
 - **Auto-Update Cerdas**: Launcher akan secara otomatis (*silent*) memeriksa pembaruan di GitHub Releases saat pertama kali dibuka. Jika ada versi terbaru, sistem akan mengunduh dan memperbarui dirinya sendiri di latar belakang.
-- **Sistem Lisensi HWID**: Dilengkapi dengan sistem penguncian lisensi berbasis *Hardware ID* (HWID) PC Server, mencegah penyalahgunaan *launcher* di luar lingkungan yang diizinkan.
-- **Pembayaran QRIS Otomatis**: Integrasi langsung dengan API Pakasir (Webhook PHP) untuk aktivasi lisensi secara *real-time*. Lisensi akan langsung diterbitkan ke server FTP saat pembayaran terkonfirmasi.
 - **Penyesuaian Visual**: Tampilan antarmuka *console* yang interaktif, halaman donasi (*web payment*) yang elegan, dan fitur deteksi sukses yang dinamis.
 
 ## 🚀 Cara Kerja Auto-Update (Bagi Developer)
