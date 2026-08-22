@@ -21,11 +21,3 @@ Jika versi di GitHub (contoh: `270823.1000`) lebih tinggi dari versi *hardcoded*
 
 - **OS**: Windows 10/11 (64-bit)
 - Sistem dirancang khusus untuk berjalan di *PC Server Diskless* (mode *SuperClient*) agar file konfigurasi dan versi Roblox tersimpan secara permanen di Game Disk.
-
-## 💻 Struktur Kode Utama
-- `launcher.py` - Inti program (Python) yang mengurus bypass instalasi Roblox, pengecekan lisensi, dan auto-update.
-- `webhook.php` - Skrip *backend* untuk menerima *callback* dari gerbang pembayaran (Pakasir) dan mem-validasi transaksi.
-- `web_donation.html` & `success.html` - Halaman antarmuka pengguna untuk memproses pembayaran dan menampilkan status donasi.
-
-## 📄 Lisensi
-Proyek ini dilisensikan di bawah **MIT License**. Anda bebas untuk menggunakan, menyalin, memodifikasi, dan mendistribusikan perangkat lunak ini dengan menyertakan salinan lisensi asli.
