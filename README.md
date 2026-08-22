@@ -17,5 +17,4 @@ Roblox Portable For Diskless adalah sebuah *launcher* dan pengelola instansi Rob
 
 ## 🛠️ Persyaratan Sistem & Instalasi
 
-- **OS**: Windows 10/11 (64-bit)
-- Sistem dirancang khusus untuk berjalan di *PC Server Diskless* (mode *SuperClient*) agar file konfigurasi dan versi Roblox tersimpan secara permanen di Game Disk.
+- Sistem dirancang khusus untuk berjalan di PC Server Diskless Windows 11 atau 10 agar file konfigurasi dan versi Roblox tersimpan secara permanen di Game Disk.
