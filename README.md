@@ -8,14 +8,12 @@ Roblox Portable For Diskless adalah sebuah *launcher* dan pengelola instansi Rob
 - **Auto-Update Cerdas**: Launcher akan secara otomatis (*silent*) memeriksa pembaruan di GitHub Releases saat pertama kali dibuka. Jika ada versi terbaru, sistem akan mengunduh dan memperbarui dirinya sendiri di latar belakang.
 - **Penyesuaian Visual**: Tampilan antarmuka *console* yang interaktif, halaman donasi (*web payment*) yang elegan, dan fitur deteksi sukses yang dinamis.
 
-## 🚀 Cara Kerja Auto-Update (Bagi Developer)
+## 🚀 Cara Penggunaan
 
-Launcher menggunakan fungsi internal untuk memeriksa versi terbarunya melalui [GitHub API](https://api.github.com/repos/artphoney12/Roblox-Portable-For-Diskless/releases/latest). 
-Jika versi di GitHub (contoh: `270823.1000`) lebih tinggi dari versi *hardcoded* di dalam `.exe`:
-1. Launcher akan mencari file berekstensi `.zip` di dalam *Release* tersebut.
-2. File diunduh dan diekstrak secara otomatis ke dalam folder *temporary*.
-3. Sistem akan mengganti file `RobloxPortable.exe` lama dengan yang baru.
-4. Launcher lama ditutup, dan launcher baru otomatis dijalankan kembali tanpa memerlukan campur tangan pengguna.
+1. Unduh file `Roblox Portable <versi>.zip` terbaru dari menu **Releases**.
+2. Ekstrak isi file `.zip` tersebut ke dalam folder Game Disk Anda (misal: `E:\Online Games\Roblox`).
+3. Jadikan `RobloxPortable.exe` sebagai *shortcut* (jalan pintas) utama untuk bermain Roblox dan pasang di Game Menu PC Client Anda.
+4. Selesai! Saat dijalankan, aplikasi akan mengurus *bypass* instalasi dan melakukan *update* secara otomatis di latar belakang.
 
 ## 🛠️ Persyaratan Sistem & Instalasi
 
