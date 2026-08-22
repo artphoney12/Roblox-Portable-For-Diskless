@@ -6,7 +6,6 @@ Roblox Portable For Diskless adalah sebuah *launcher* dan pengelola instansi Rob
 
 - **Bypass & Portabilitas**: Menjalankan Roblox secara portabel dari satu lokasi (Game Disk) tanpa perlu instalasi di setiap PC Klien.
 - **Auto-Update Cerdas**: Launcher akan secara otomatis (*silent*) memeriksa pembaruan di GitHub Releases saat pertama kali dibuka. Jika ada versi terbaru, sistem akan mengunduh dan memperbarui dirinya sendiri di latar belakang.
-- **Penyesuaian Visual**: Tampilan antarmuka *console* yang interaktif, halaman donasi (*web payment*) yang elegan, dan fitur deteksi sukses yang dinamis.
 
 ## 🚀 Cara Penggunaan
 
