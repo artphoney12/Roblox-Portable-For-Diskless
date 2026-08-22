@@ -9,7 +9,7 @@ import subprocess
 import msvcrt
 import hashlib
 import webbrowser
-
+import json
 # --- Konfigurasi ---
 if getattr(sys, 'frozen', False):
     PORTABLE_DIR = os.path.dirname(sys.executable)
@@ -22,6 +22,46 @@ LOCAL_APPDATA = os.environ.get("LOCALAPPDATA")
 ROBLOX_LOCAL_DIR = os.path.join(LOCAL_APPDATA, "Roblox")
 SETUP_URL = "https://setup.rbxcdn.com/"
 PAYMENT_URL = "https://rbp.artphoney.my.id"
+LAUNCHER_VERSION = "v1.0.0"
+
+def check_for_updates():
+    try:
+        req = urllib.request.Request("https://api.github.com/repos/artphoney12/Roblox-Portable-For-Diskless/releases/latest")
+        req.add_header("User-Agent", "RobloxPortableUpdater")
+        with urllib.request.urlopen(req, timeout=5) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode('utf-8'))
+                latest_version = data.get("tag_name", "")
+                if latest_version and latest_version != LAUNCHER_VERSION:
+                    assets = data.get("assets", [])
+                    download_url = None
+                    for asset in assets:
+                        if asset.get("name") == "RobloxPortable.exe":
+                            download_url = asset.get("browser_download_url")
+                            break
+                    
+                    if download_url:
+                        new_exe_path = os.path.join(PORTABLE_DIR, "RobloxPortable_new.exe")
+                        urllib.request.urlretrieve(download_url, new_exe_path)
+                        
+                        current_exe = sys.executable if getattr(sys, 'frozen', False) else os.path.abspath(__file__)
+                        current_exe_name = os.path.basename(current_exe)
+                        bat_path = os.path.join(PORTABLE_DIR, "updater.bat")
+                        
+                        bat_content = f"""@echo off
+timeout /t 2 /nobreak >nul
+del "{current_exe}"
+ren "{new_exe_path}" "{current_exe_name}"
+start "" "{current_exe}"
+del "%~f0"
+"""
+                        with open(bat_path, "w") as f:
+                            f.write(bat_content)
+                            
+                        subprocess.Popen(bat_path, shell=True, creationflags=subprocess.CREATE_NO_WINDOW)
+                        sys.exit(0)
+    except Exception as e:
+        pass
 
 def hide_console():
     hwnd = ctypes.windll.kernel32.GetConsoleWindow()
@@ -323,6 +363,8 @@ def check_single_instance():
 
 def main():
     _mutex = check_single_instance()
+    
+    check_for_updates()
     
     is_licensed = check_license()
     if is_licensed:
